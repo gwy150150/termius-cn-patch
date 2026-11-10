@@ -1,0 +1,763 @@
+# Termius 简体中文补丁 - 词典 1/3：通用操作、主机与连接
+# 格式：英文原文|简体中文    （# 开头为注释，空行忽略）
+# 可自由增删；改完后运行 生成补丁.py 重新构建即可生效
+Continue|继续
+Cancel|取消
+Done|完成
+Close|关闭
+Back|返回
+Next|下一步
+Save|保存
+Save and close|保存并关闭
+Save & close|保存并关闭
+Delete|删除
+Remove|移除
+Edit|编辑
+Add|添加
+Create|创建
+New|新建
+Open|打开
+Copy|复制
+Paste|粘贴
+Cut|剪切
+Move|移动
+Rename|重命名
+Duplicate|复制副本
+Confirm|确认
+Retry|重试
+Skip|跳过
+Later|稍后
+Do it later|稍后再说
+Finish later|稍后完成
+Start over|重新开始
+Try again|重试
+Dismiss|忽略
+Discard|放弃
+Apply|应用
+Reset|重置
+Clear|清除
+Select|选择
+Select all|全选
+Search|搜索
+Filter|筛选
+Refresh|刷新
+Run|运行
+Show|显示
+Hide|隐藏
+Enable|启用
+Disable|禁用
+Enabled|已启用
+Disabled|已禁用
+Generate|生成
+Generate & save|生成并保存
+Import|导入
+Export|导出
+Install|安装
+Upgrade|升级
+Upgrade now|立即升级
+Buy now|立即购买
+Contact us|联系我们
+Contact support|联系支持
+Contact sales|联系销售
+Documentation|文档
+Learn More|了解更多
+Learn more|了解更多
+Help|帮助
+About|关于
+Settings|设置
+Preferences|偏好设置
+App Preferences|应用偏好设置
+General|通用
+Advanced|高级
+Default|默认
+Custom|自定义
+Auto|自动
+None|无
+All|全部
+Everyone|所有人
+Yes|是
+No|否
+OK|确定
+Required|必填
+Optional|可选
+Loading|加载中
+Success|成功
+Error|错误
+Warning|警告
+Info|提示
+Failure|失败
+Pending|等待中
+Active|活跃
+Unknown|未知
+Unnamed|未命名
+Unidentified|未识别
+Not set|未设置
+No results found|未找到结果
+No options|无选项
+Something went wrong|出了点问题
+Something went wrong!|出了点问题！
+Network error|网络错误
+Connection error|连接错误
+Request failed|请求失败
+Timeout|超时
+Retry again|请重试
+Please try again|请重试
+Adjust your search and try again.|请调整搜索条件后重试。
+Name|名称
+Name is already used|名称已被使用
+This name is already in use|该名称已被使用
+Label|标签
+Set a label|设置标签
+Add a label...|添加标签…
+Description|描述
+Comment|注释
+Add a comment|添加注释
+Tags|标签
+Tag|标签
+Create Tag|新建标签
+Search tags|搜索标签
+Group|分组
+Groups|分组
+New Group|新建分组
+Create Group|创建分组
+Edit Group|编辑分组
+Group Settings|分组设置
+Group Details|分组详情
+Parent Group|上级分组
+New Folder|新建文件夹
+Folder|文件夹
+Host|主机
+Hosts|主机
+New Host|新建主机
+Add SSH|添加 SSH
+Add Telnet|添加 Telnet
+Edit Host|编辑主机
+Edit host|编辑主机
+Host Settings|主机设置
+Host Details|主机详情
+Host History|主机历史
+Select Host|选择主机
+Create hosts|创建主机
+Search hosts or tabs|搜索主机或标签页
+this host|此主机
+these hosts|这些主机
+Connect|连接
+Disconnect|断开连接
+Reconnect|重新连接
+Connect in a new window|在新窗口中连接
+Quick Connect|快速连接
+Quick Connect in a new window|在新窗口中快速连接
+IP or Hostname|IP 或主机名
+IP address & MAC|IP 地址与 MAC
+Address|地址
+Port|端口
+Protocol|协议
+Choose protocol|选择协议
+SSH|SSH
+Telnet|Telnet
+Mosh|Mosh
+Serial|串口
+Local|本地
+Remote|远程
+Local Host|本地主机
+Intermediate host|中间主机
+Host Chaining|主机跳转
+Username|用户名
+Username*|用户名 *
+Password|密码
+Enter password|输入密码
+Auth password|认证密码
+Auth key|认证密钥
+Auth password and key|密码与密钥认证
+Passphrase|密码短语
+Save passphrase|保存密码短语
+Credentials|凭证
+Credentials mode|凭证模式
+No credentials|无凭证
+Identity|身份
+Identities|身份
+New Identity|新建身份
+Edit Identity|编辑身份
+Toggle password visibility|切换密码可见性
+Forgot password?|忘记密码？
+Remember me|记住我
+Log In|登录
+Log in|登录
+Log out|退出登录
+Sign up|注册
+sign up|注册
+Go to Log in|前往登录
+Continue with email|使用邮箱继续
+Continue with|继续使用
+Sign up with|使用以下方式注册
+Check your email|查看你的邮箱
+Didn't get email?|没有收到邮件？
+Resend|重新发送
+Resend code?|重新发送验证码？
+Verification code|验证码
+Enter verification code|输入验证码
+Enter your|请输入你的
+Enter the verification code from your 2FA provider.|请输入两步验证应用中的验证码。
+Forgot|忘记
+Invalid format|格式无效
+Incorrect format|格式不正确
+Invalid argument|参数无效
+Required field|必填项
+
+# Termius 简体中文补丁 - 词典 2/3：密钥、片段、文件、终端、工作区
+Key|密钥
+Keys|密钥
+New Key|新建密钥
+Add Key|添加密钥
+Add key|添加密钥
+Select key|选择密钥
+Key File|密钥文件
+Key type|密钥类型
+Key size (bits)|密钥长度（位）
+Private key|私钥
+Public key|公钥
+Public Key|公钥
+Private Key|私钥
+SSH Key|SSH 密钥
+SSH ID|SSH ID
+SSH Certificate|SSH 证书
+Certificate|证书
+Import key failed|导入密钥失败
+Import Key Button|导入密钥按钮
+Import to|导入到
+Imported|已导入
+There was a problem in the key import process|导入密钥时出现问题
+Generating the key...|正在生成密钥…
+Generating certificate...|正在生成证书…
+Generating passkey...|正在生成通行密钥…
+Uploading passkey...|正在上传通行密钥…
+Generate Key|生成密钥
+Fingerprint Changed|指纹已变更
+New Fingerprint|新指纹
+Known Hosts|已知主机
+Keychain|钥匙串
+Keychain Access|钥匙串访问
+Biometric Key|生物识别密钥
+Windows Hello|Windows Hello
+Touch ID|Touch ID
+FIDO2|FIDO2
+Insert FIDO2 device|请插入 FIDO2 设备
+Attach the hardware key|请连接硬件密钥
+Discoverable FIDO2-based key|可发现的 FIDO2 密钥
+Passkey|通行密钥
+Snippet|命令片段
+Snippets|命令片段
+New Snippet|新建命令片段
+Create Snippet Screen|创建命令片段
+Edit Snippet|编辑命令片段
+Run Snippet|运行命令片段
+Snippets Panel|命令片段面板
+Snippets Screen|命令片段页面
+Snippets automation|命令片段自动化
+Snippets With AI|AI 命令片段
+Snippets automation, Cloud integration, Session logs and more.|命令片段自动化、云端集成、会话日志等功能。
+Startup snippet|启动命令片段
+Startup|启动时
+Example: check network load|例如：检查网络负载
+Generate Snippets and convert text to shell|生成命令片段并将文本转换为 Shell 命令
+Text To Command With AI|AI 文本转命令
+Enable AI|启用 AI
+Enable AI in Termius|在 Termius 中启用 AI
+AI in Termius|Termius 中的 AI
+A command was successfully generated out of a prompt|已根据提示成功生成命令
+Script|脚本
+Command|命令
+Commands|命令
+Command Palette|命令面板
+Open Command Palette|打开命令面板
+Autocomplete|自动补全
+Autocomplete for sudo|sudo 自动补全
+activate autocomplete for this session|为此会话启用自动补全
+keywords highlighting|关键词高亮
+Terminal|终端
+New Local Terminal|新建本地终端
+Open Local Terminal|打开本地终端
+New Serial Connection|新建串口连接
+New Tab|新建标签页
+New tab|新建标签页
+Close Tab|关闭标签页
+Next Tab|下一个标签页
+Previous Tab|上一个标签页
+Tab|标签页
+Tabs|标签页
+Split View|分屏视图
+Workspace|工作区
+New Workspace|新建工作区
+Workspace View|工作区视图
+Workspace Split View|工作区分屏视图
+Workspace Focus View|工作区专注视图
+Workspace Template|工作区模板
+Save Workspace Template|保存工作区模板
+Toggle Workspace View Mode|切换工作区视图模式
+Move focus between Workspace terminals|在工作区终端间切换焦点
+Focus mode|专注模式
+Broadcast|广播
+Switch the Broadcast Mode|切换广播模式
+Clear Terminal Buffer|清空终端缓冲区
+Copy from Terminal|从终端复制
+Paste to Terminal|粘贴到终端
+Select All in Terminal|终端内全选
+Open Terminal Search|打开终端搜索
+Show Terminal Side-panel|显示终端侧栏
+Show terminal side-panel|显示终端侧栏
+Terminal Side Bar|终端侧栏
+Session logs|会话日志
+Shell History|Shell 历史
+History|历史记录
+Logs|日志
+Replay|回放
+Record|录制
+Terminal Sharing|终端共享
+Share a terminal session with your teammates to troubleshoot together|与队友共享终端会话，一起排查问题
+Request remote control|请求远程控制
+Take back remote control|收回远程控制
+Text Size|文字大小
+Increase terminal font size|放大终端字体
+Decrease terminal font size|缩小终端字体
+Reset terminal font size to default|恢复默认终端字体
+Font|字体
+Font Size|字体大小
+Theme|主题
+Color|颜色
+Colors|配色
+Appearance|外观
+Blink|闪烁
+Cursor|光标
+Line height|行高
+Scroll|滚动
+SFTP|文件传输
+SFTP Screen|文件传输页面
+Files|文件
+File|文件
+File Manager|文件管理器
+New Folder|新建文件夹
+Upload|上传
+Download|下载
+Copy to target directory|复制到目标目录
+Open with...|打开方式…
+No file selected|未选择文件
+No such file|文件不存在
+Path|路径
+Size|大小
+Date|日期
+Permissions|权限
+Port Forwarding|端口转发
+Port Forwarding Screen|端口转发页面
+New Port Forwarding|新建端口转发
+PF rules|端口转发规则
+Bind address|绑定地址
+Local port number|本地端口
+Local Rule|本地规则
+Remote port number|远程端口
+Remote Rule|远程规则
+Dynamic Rule|动态规则
+Dynamic|动态
+Destination address|目标地址
+Destination port number|目标端口
+Forward|转发
+
+# Termius 简体中文补丁 - 词典 3/3：账户、团队、保险库、订阅、状态、系统菜单
+Account|账户
+Account Page|账户页面
+My Account|我的账户
+Profile|个人资料
+Email|邮箱
+First name|名字
+Last name|姓氏
+Password|密码
+Change password|修改密码
+Security|安全
+Privacy Policy|隐私政策
+Terms of Service|服务条款
+Backup & Sync|备份与同步
+Sync|同步
+Sync now|立即同步
+Sync to mobile|同步到移动端
+Sync across mobile and desktop|在手机与电脑间同步
+Synchronization|同步中
+Secure Sync|安全同步
+Pull data from cloud|从云端拉取数据
+Data|数据
+Encryption password|加密密码
+Enter your encryption password|输入你的加密密码
+Setting your data encryption|正在设置数据加密
+Enable new encryption|启用新加密
+Enabling new encryption|正在启用新加密
+Decrypt|解密
+Decrypting configuration file|正在解密配置文件
+Unlock your vault|解锁你的保险库
+Personal cloud vault|个人云端保险库
+Vault|保险库
+Vaults|保险库
+Add vault|添加保险库
+Add new vault|添加新保险库
+Create vault|创建保险库
+Vault Picker|保险库选择器
+Vaults Filter|保险库筛选
+Team vault|团队保险库
+Business Vaults|企业保险库
+Team Deactivation Screen|团队停用页面
+Edit Vault Screen|编辑保险库页面
+Vault not found|找不到保险库
+Vaults enable backup and secure sync across devices.|保险库可在各设备间备份并安全同步。
+Add shared vaults to give different members access to different data|添加共享保险库，为不同成员分配不同数据的访问权限
+Enter vault name, e.g. Production...|输入保险库名称，例如：生产环境…
+all your Vaults and associated information.|你的所有保险库及相关信息。
+Team|团队
+My Team|我的团队
+Team plan|团队套餐
+Members|成员
+Member|成员
+Invite|邀请
+Invite Members|邀请成员
+Invite members|邀请成员
+Invite People|邀请成员
+Invite your team|邀请你的团队
+Invite team members|邀请团队成员
+Add members by name or email|按姓名或邮箱添加成员
+Copy invitation link|复制邀请链接
+Search members|搜索成员
+Join|加入
+Join another department|加入其他部门
+Collaborate|协作
+Shared|已共享
+Share|共享
+Personal|个人
+Individual|个人
+Owner|所有者
+You|你
+User|用户
+Guest|访客
+Can edit|可编辑
+Can view|可查看
+can edit|可编辑
+can view|可查看
+No access|无访问权限
+No access|无权限
+no access|无权限
+Edit Permissions|编辑权限
+Grant Access|授予访问权限
+Grant access|授予访问权限
+Confirm Access|确认访问权限
+Confirm access|确认访问权限
+Pending access|等待授权
+Cancel request|取消请求
+remove access|移除访问权限
+Members use their own credentials|成员使用各自的凭证
+Managed by:|管理者：
+Shortcut|快捷键
+Shortcuts|快捷键
+Keyboard|键盘
+Keyboard Shortcuts|键盘快捷键
+Mac hotkeys|Mac 快捷键
+PC hotkeys|PC 快捷键
+Mouse|鼠标
+Right Click|右键单击
+Double Click|双击
+Click|单击
+Control|Ctrl
+Shift|Shift
+Alt|Alt
+Esc|Esc
+Enter|Enter
+Space|空格
+Backspace|退格
+Tab|Tab
+Command Palette|命令面板
+Free|免费
+Pro|专业版
+Premium|高级版
+Starter|入门版
+Business|企业版
+Enterprise|企业版
+Team|团队
+Upgrade Account|升级账户
+Upgrade your plan|升级套餐
+Upgrade to Pro.|升级到专业版。
+Choose the right plan for you.|选择适合你的套餐。
+Choose your billing period|选择计费周期
+Your current plan|当前套餐
+Annual|按年
+Monthly|按月
+Weekly|每周
+Daily|每天
+Billing|账单
+Payment|付款
+Waiting for your payment...|正在等待付款…
+Restore purchase|恢复购买
+Your free trial has expired|免费试用已结束
+Your subscription has expired|订阅已过期
+Your team subscription has expired|团队订阅已过期
+Your setup is complete!|设置已完成！
+Setup is complete!|设置完成！
+Get instructions|获取操作说明
+Scan the QR code|扫描二维码
+I have verified this device|我已验证此设备
+I don't need it|我不需要
+Confirming presence...|正在确认…
+Multiplayer|多人协作
+Enable Multiplayer in Termius|在 Termius 中启用多人协作
+Enable group sharing|启用分组共享
+Beta|Beta
+Changelog|更新日志
+Check for Update|检查更新
+No Updates|暂无更新
+Version|版本
+Report a Bug|报告问题
+Let us know|告诉我们
+Termius Support|Termius 支持
+Contact support|联系支持
+Open Termius to continue|请打开 Termius 继续
+Termius for Education|Termius 教育版
+Integrations|集成
+Workspace|工作区
+Home|主页
+Home Screen|主页
+Side Menu|侧边菜单
+List|列表
+Grid|网格
+Details|详情
+Contents|内容
+Type|类型
+Status|状态
+Position|位置
+Left|左
+Right|右
+Top|上
+Bottom|下
+Show more|显示更多
+Jump to|跳转到
+Jump To|跳转到
+Open Hosts Page|打开主机页面
+Open Snippets|打开命令片段
+Open Port Forwarding|打开端口转发
+Copied|已复制
+Copying|正在复制
+Pasted|已粘贴
+Saved|已保存
+Saving entities|正在保存
+Cancelled|已取消
+Canceled|已取消
+Imported|已导入
+Generated|已生成
+Generating|正在生成
+Not implemented|尚未实现
+not implemented|尚未实现
+Unauthorized|未授权
+Access denied|访问被拒绝
+Enable|启用
+Enable|开启
+Form closed|表单已关闭
+Do it later|稍后再说
+Start over|重新开始
+Finish later|稍后完成
+Get a quote for Team|获取团队版报价
+Choose Plan Screen|选择套餐页面
+Choose the right plan for you.|选择适合你的套餐。
+all features|全部功能
+Suggest new|建议新功能
+Leave your feedback here...|在此留下你的反馈…
+Send feedback|发送反馈
+Unable to send Feedback|无法发送反馈
+Continue & Save|继续并保存
+Quick Connect|快速连接
+Reconnect Button|重新连接按钮
+Reconnect Hint|重新连接提示
+Hosts Screen|主机页面
+Hosts Empty Screen|主机空列表页
+Welcome Screen|欢迎页面
+Welcome|欢迎
+Get started|开始使用
+# --- 原生应用菜单（macOS/Windows 菜单栏） ---
+File|文件
+View|视图
+Window|窗口
+Edit|编辑
+New Window|新建窗口
+Minimize|最小化
+Bring All to Front|置于最前
+Toggle Full Screen|切换全屏
+Select All|全选
+Find|查找
+Termius Dev Tools|Termius 开发者工具
+Background Dev Tools|后台开发者工具
+Focused Window Dev Tools|当前窗口开发者工具
+Vaults|保险库
+Settings|设置
+Check for Update|检查更新
+Learn More|了解更多
+About|关于
+
+# Termius 简体中文补丁 - 词典 4/4：补充词条、长句提示、日期与设置项
+# 前缀类词条（原文以空格结尾）运行时会自动做前缀匹配
+Continue with |继续使用
+Sign up with |使用以下方式注册：
+Forgot |忘记
+Enter your |请输入你的
+Resend in |重新发送（剩余
+Enter your encryption password|输入你的加密密码
+Your reset link has been sent to your email|重置链接已发送到你的邮箱
+Something went wrong, please try again later|出了点问题，请稍后重试
+Set up your vault|设置你的保险库
+Set up|设置
+Log in to Termius to unlock your encrypted|登录 Termius 以解锁你的加密
+cloud vault|云端保险库
+Open Serial Connection|打开串口连接
+Keyboard Interactive|键盘交互认证
+Manage|管理
+Insert|插入
+Capture|捕获
+Check|检查
+Copies|副本
+Reject all|全部拒绝
+Automation|自动化
+Promotion|推广
+Debug|调试
+Website|网站
+Assets|资源
+Patches|补丁
+Text|文本
+Item|项目
+Header|页眉
+Footer|页脚
+Current entity|当前条目
+Production|生产环境
+Staging|预发布环境
+Host Edit|编辑主机
+Group Edit|编辑分组
+Entity Cell|列表项
+Duplicated In New Window|在新窗口中复制
+Duplicated Tab|复制的标签页
+Multiple Vaults Promo|多保险库推广
+Ssh config form|SSH 配置表单
+Telnet config form|Telnet 配置表单
+Hosts Empty Screen|主机列表为空
+No Updates|暂无更新
+Setup is complete!|设置完成！
+Your setup is complete!|设置已完成！
+I have verified this device|我已验证此设备
+Open Termius to continue|请打开 Termius 继续
+Save your connection details as hosts|将连接信息保存为主机
+Add targets|添加目标
+Choose the right plan for you.|选择适合你的套餐。
+Connect with one click from all your mobile and desktop devices.|在手机与电脑上一点即连。
+For extra security, a verification email has been sent to|为提升安全性，验证邮件已发送至
+Add a Package|添加软件包
+Create a new package by typing the name|输入名称以创建软件包
+Set a label|设置标签
+Add a label...|添加标签…
+Leave your feedback here...|在此留下你的反馈…
+Enter vault name, e.g. Production...|输入保险库名称，例如：生产环境…
+Verification code|验证码
+Confirming presence...|正在确认…
+Finish later|稍后完成
+Start over|重新开始
+Get started|开始使用
+Welcome|欢迎
+Welcome back|欢迎回来
+Hours|小时
+Minutes|分钟
+Seconds|秒
+Milliseconds|毫秒
+Days|天
+Day|天
+Week|周
+Month|月
+Year|年
+Jan|1月
+Feb|2月
+Mar|3月
+Apr|4月
+May|5月
+Jun|6月
+Jul|7月
+Aug|8月
+Sep|9月
+Oct|10月
+Nov|11月
+Dec|12月
+Mon|周一
+Tue|周二
+Wed|周三
+Thu|周四
+Fri|周五
+Sat|周六
+Sun|周日
+Daily|每天
+Weekly|每周
+Monthly|每月
+Annual|每年
+Always|始终
+Never|从不
+On|开
+Off|关
+Auto|自动
+Enable group sharing|启用分组共享
+Enable group sharing|启用分组共享
+Enable AI|启用 AI
+Enable Multiplayer in Termius|在 Termius 中启用多人协作
+Enable new encryption|启用新加密
+Show more|显示更多
+Show less|收起
+Collapse|收起
+Expand|展开
+Open in new window|在新窗口中打开
+Open in a new window|在新窗口中打开
+Connect in a new window|在新窗口中连接
+New Window|新建窗口
+New Tab|新建标签页
+Close Tab|关闭标签页
+Close Window|关闭窗口
+Copy invitation link|复制邀请链接
+Copy to clipboard|复制到剪贴板
+Send|发送
+Submit|提交
+Verify|验证
+Verify code|验证验证码
+Resend code|重新发送验证码
+Change|更改
+Replace|替换
+Replace all|全部替换
+Cancel request|取消请求
+Pending access|等待授权
+Shared|已共享
+Private|私有
+Public|公开
+Unlocked|已解锁
+Locked|已锁定
+Connected|已连接
+Disconnected|已断开
+Connecting...|正在连接…
+Reconnecting...|正在重新连接…
+Loading...|加载中…
+Saving...|正在保存…
+Please wait|请稍候
+In progress|进行中
+Complete|完成
+Failed|失败
+Expired|已过期
+Available|可用
+Unavailable|不可用
+Not available|不可用
+Not found|未找到
+Empty|空
+Add a comment|添加注释
+Search hosts or tabs|搜索主机或标签页
+No hosts found|未找到主机
+No results|没有结果
+Nothing here|这里空空如也
+Get instructions|获取操作说明
+Set up your vault|设置你的保险库
+Termius Support|Termius 支持
+Report a Bug|报告问题
+Check for Update|检查更新
+Release notes|版本说明
+What's new|新功能
+Send feedback|发送反馈
+Privacy Policy|隐私政策
+Terms of Service|服务条款

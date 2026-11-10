@@ -1,0 +1,9 @@
+{
+  "exe_offset": 236851951,
+  "old_hash": "8bd2680ceb8399c9c839d28869ade657c609cd72af67caa35ddf5bfa83cc16d9",
+  "new_hash": "0d885e12d75adf386bd1d112487cf373b03ac4b674b73b3efb6242b6ec8cb064",
+  "old_data_start": 2391312,
+  "new_data_start": 2391584,
+  "asar_entries": 8870,
+  "asar_size": 176995888
+}

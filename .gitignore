@@ -1,0 +1,16 @@
+# 构建产物与大文件不入库，需按 README 自行生成
+output/
+original/
+backup/
+work/
+app.asar
+Termius.exe
+*.zip
+
+# 含个人主机信息的截图不入库
+*.png
+*.jpg
+
+__pycache__/
+*.pyc
+.DS_Store
