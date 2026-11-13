@@ -5,7 +5,7 @@ title Termius 简体中文补丁 - 安装
 
 set "TERMIUS=%LOCALAPPDATA%\Programs\Termius"
 set "PATCHDIR=%~dp0"
-set "BACKUP=%TERMIUS%\_cn_patch\backup"
+set "BACKUP=%PATCHDIR%backup"
 
 echo ==================================================
 echo    Termius 简体中文补丁 · 安装

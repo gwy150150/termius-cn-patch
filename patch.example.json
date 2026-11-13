@@ -1,9 +1,9 @@
 {
-  "exe_offset": 236851951,
-  "old_hash": "8bd2680ceb8399c9c839d28869ade657c609cd72af67caa35ddf5bfa83cc16d9",
-  "new_hash": "0d885e12d75adf386bd1d112487cf373b03ac4b674b73b3efb6242b6ec8cb064",
-  "old_data_start": 2391312,
-  "new_data_start": 2391584,
-  "asar_entries": 8870,
-  "asar_size": 176995888
+  "exe_offset": 238093551,
+  "old_hash": "b594b195eb1c17e50c6b3648ed02cfb507230e232bcea6fbc88fb6f73dfd1882",
+  "new_hash": "3cd168e6d88cb972b1c6275f25792a995f68b42784cce32f8fb12652d2fbed52",
+  "old_data_start": 2392096,
+  "new_data_start": 2392364,
+  "asar_entries": 8873,
+  "asar_size": 176917633
 }

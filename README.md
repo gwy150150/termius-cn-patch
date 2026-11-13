@@ -56,10 +56,10 @@ asar 里每个文件还带独立的 SHA256 记录**。只改文案会导致程�
 
 ### 方式二：从源码构建
 
-1. 备份 Termius 安装目录，或确保安装目录同级存在完整的 `Termius.zip`
-   （构建脚本用它提取**未经修改**的原始文件，保证可重复构建）。
-2. 把本仓库文件放到任意目录，安装 Python 3。
-3. 运行：
+1. 把本仓库放到 **Termius 安装目录之外** 的任意位置
+   （例如 `%LOCALAPPDATA%\Termius-CN-Patch`）。Termius 升级会重装整个安装目录，
+   补丁源码放在里面会一起被删掉。
+2. 安装 Python 3，运行：
 
    ```bat
    set TERMIUS_DIR=%LOCALAPPDATA%\Programs\Termius
@@ -67,17 +67,35 @@ asar 里每个文件还带独立的 SHA256 记录**。只改文案会导致程�
    ```
 
    不设置 `TERMIUS_DIR` 时，脚本会自动探测 `%LOCALAPPDATA%\Programs\Termius`。
+   脚本把当前**未打补丁**的原始 `app.asar` / `Termius.exe` 缓存到 `original\`，
+   改词典后反复重建不会累积修改；检测到 Termius 换版本时会自动刷新缓存。
    产物在 `output\`：`app.asar`、`patch.json`、`词典.json`。
-4. 退出 Termius，运行 `安装补丁.bat`。
+3. 退出 Termius，运行 `安装补丁.bat`。
 
-备份位置：`Termius安装目录\_cn_patch\backup\app.asar.orig`。
+备份与回滚文件都保存在补丁目录内（不会被更新删除）：
+`backup\app.asar.orig`、`original\app.asar`、`original\Termius.exe`。
+
+## Termius 更新后
+
+升级会覆盖 `app.asar` 与 `Termius.exe`，界面变回英文属正常现象。
+**不要直接套用旧的 `output\app.asar`**（版本不匹配会导致程序无法启动），重新构建即可：
+
+```bat
+cd /d %LOCALAPPDATA%\Termius-CN-Patch
+python 生成补丁.py
+安装补丁.bat
+```
+
+构建脚本会自动识别新版本并刷新 `original\` 缓存。
+即使升级前没来得及还原也没关系——更新后的安装目录本身就是干净的原版。
 
 ## 重要提醒
 
 - ⚠️ **版本绑定**：补丁针对特定 Termius 构建，`patch.json` 里的 exe 偏移与 hash 只对那一版有效。
   **换版本必须重新构建**，不要跨版本套用。
-- ⚠️ **自动更新**：Termius 升级会替换 `app.asar` / `Termius.exe`。若 exe 里仍是补丁的校验值
-  而 asar 已换成官方新版，校验不匹配会导致程序无法启动。**升级前先运行 `还原补丁.bat`**。
+- ⚠️ **自动更新**：若更新只替换了 `app.asar`、而 exe 里仍是补丁的校验值，
+  校验不匹配会导致程序无法启动。**升级前先运行 `还原补丁.bat` 最稳妥**；
+  万一已经卡住，重新安装 Termius 即可恢复。
 - **数字签名**：改写 exe 中 64 字节会使 Authenticode 签名失效，SmartScreen 可能提示
   "未知发布者"，选择"仍要运行"即可；还原后签名恢复。
 - **汉化范围**：界面层汉化，不含命令行帮助、补全描述、专有名词和用户自存内容。

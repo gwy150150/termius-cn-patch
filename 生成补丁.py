@@ -87,22 +87,53 @@ def load_dict():
 
 
 # ---------------------------------------------------------------- 原始文件
+def is_patched_asar(path):
+    """判断 app.asar 是否已被本补丁注入，避免把补丁版误当成原版缓存"""
+    try:
+        with open(path, 'rb') as f:
+            head = f.read(16)
+            if len(head) < 16:
+                return False
+            n = struct.unpack('<I', head[12:16])[0]
+            f.seek(16)
+            hdr = json.loads(f.read(n).decode('utf-8'))
+        node = hdr['files']
+        for part in ('ui-process', 'assets', 'termius-zh.js'):
+            node = node['files'][part]
+        return True
+    except Exception:
+        return False
+
+
 def prepare_original():
     a, e = ORIG / 'app.asar', ORIG / EXE_NAME
+    ORIG.mkdir(parents=True, exist_ok=True)
+    cur_a, cur_e = ROOT / ASAR_REL, ROOT / EXE_NAME
+
+    # Termius 更新后安装目录里是全新的原版：只要它不是补丁版且与缓存不一致，就刷新缓存。
+    # 这样升级后直接重跑本脚本即可，不必手动清理 original/。
+    if cur_a.exists() and cur_e.exists() and not is_patched_asar(cur_a):
+        stale = (not a.exists() or not e.exists() or
+                 a.stat().st_size != cur_a.stat().st_size or
+                 e.stat().st_size != cur_e.stat().st_size)
+        if stale:
+            log('检测到 Termius 新版本，刷新原始文件缓存…')
+            shutil.copy2(cur_a, a)
+            shutil.copy2(cur_e, e)
+        return a, e
+
     if a.exists() and e.exists():
         return a, e
-    ORIG.mkdir(parents=True, exist_ok=True)
+
+    # 兜底：安装目录已是补丁版且无缓存时，尝试从完整安装备份 zip 取原版
     if ZIP.exists():
-        log('首次运行，从 Termius.zip 提取原始文件（约 400MB，稍候）…')
+        log('从 Termius.zip 提取原始文件（约 400MB，稍候）…')
         with zipfile.ZipFile(ZIP) as z:
             for member, target in [('resources/app.asar', a), (EXE_NAME, e)]:
                 with z.open(member) as src, open(target, 'wb') as dst:
                     shutil.copyfileobj(src, dst, 4 * 1024 * 1024)
-    else:
-        log('未找到 Termius.zip，改用安装目录中的当前文件')
-        shutil.copy2(ROOT / ASAR_REL, a)
-        shutil.copy2(ROOT / EXE_NAME, e)
-    return a, e
+        return a, e
+    sys.exit('找不到未打补丁的原始文件：请先运行 还原补丁.bat，或提供 Termius.zip')
 
 
 # ---------------------------------------------------------------- asar 读写

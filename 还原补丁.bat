@@ -5,7 +5,7 @@ title Termius 简体中文补丁 - 还原
 
 set "TERMIUS=%LOCALAPPDATA%\Programs\Termius"
 set "PATCHDIR=%~dp0"
-set "BACKUP=%TERMIUS%\_cn_patch\backup"
+set "BACKUP=%PATCHDIR%backup"
 
 echo ==================================================
 echo    Termius 简体中文补丁 · 还原
@@ -21,7 +21,7 @@ if not errorlevel 1 (
 
 if not exist "%BACKUP%\app.asar.orig" (
     echo [错误] 找不到备份：%BACKUP%\app.asar.orig
-    echo 也可以把 Termius.zip 里的 resources\app.asar 解压覆盖回去。
+    echo 也可以重新安装 Termius 来恢复原版文件。
     pause
     exit /b 1
 )
